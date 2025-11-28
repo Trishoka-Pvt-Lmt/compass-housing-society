@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compass Housing Society – Properties</title>
+
+  <!-- Google Font & Bootstrap -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="images/logos/compasshousingsocietynobg.png" type="image/x-icon" />
+
+</head>
+
+<body class="light-mode">
+
+  <!-- PAGE LOADER -->
+  <div class="page-loader d-flex align-items-center justify-content-center">
+    <div class="loader-circle"></div>
+  </div>
+
+  <!-- ============= NAVBAR ============= -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand" href="index.html">
+                <img src="images/logos/compasshousingsociety.png" alt="&nbsp;" class="logo"/>&nbsp;<span>Compass Housing Society</span>
+            </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index-2.html">Home2</a>
+                    </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="properties.html">Properties</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="agents.html">Agents</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <button class="mode-toggle" id="modeToggle" title="Toggle Dark Mode">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="rtl-toggle" id="rtlToggle" title="Toggle RTL">
+          <i class="fas fa-globe"></i>
+        </button>
+        <a href="login.html" class="btn btn-primary ms-2">Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-content">
+
+    <!-- Breadcrumb / Page Title -->
+    <section class="py-4 py-md-5 border-bottom bg-white">
+      <div class="container">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+          <div>
+            <p class="text-muted mb-1 small">Home &gt; <span class="text-dark fw-semibold">Properties</span></p>
+            <h1 class="page-title h2 mb-0">Properties</h1>
+          </div>
+          <div class="text-md-end">
+            <span class="text-muted small">Select Location</span>
+            <div class="mt-1 fw-medium">Showing 1–16 of 72 results</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filters + Results -->
+    <section class="py-5 py-lg-6 bg-light-subtle">
+      <div class="container">
+        <div class="row g-4 g-lg-5">
+          <!-- Sidebar Filters -->
+          <aside class="col-lg-3">
+            <div class="card border-0 shadow-sm mb-4">
+              <div class="card-body">
+                <h5 class="card-title h6 mb-3">Location</h5>
+                <select class="form-select form-select-sm mb-3">
+                  <option selected>California</option>
+                  <option>Miami</option>
+                  <option>New York</option>
+                  <option>Chicago</option>
+                  <option>San Francisco</option>
+                </select>
+
+                <h5 class="card-title h6 mb-3 mt-2">Property Type</h5>
+                <div class="btn-group w-100 mb-3" role="group">
+                  <button type="button" class="btn btn-sm btn-primary">Buy</button>
+                  <button type="button" class="btn btn-sm btn-outline-primary">Rent</button>
+                </div>
+
+                <h5 class="card-title h6 mb-3 mt-2">Categories</h5>
+                <div class="d-flex flex-column gap-2 small">
+                  <label class="form-check">
+                    <input class="form-check-input" type="checkbox" checked />
+                    <span class="form-check-label">Apartment</span>
+                  </label>
+                  <label class="form-check">
+                    <input class="form-check-input" type="checkbox" />
+                    <span class="form-check-label">Villa</span>
+                  </label>
+                  <label class="form-check">
+                    <input class="form-check-input" type="checkbox" />
+                    <span class="form-check-label">Duplex</span>
+                  </label>
+                  <label class="form-check">
+                    <input class="form-check-input" type="checkbox" />
+                    <span class="form-check-label">Houses</span>
+                  </label>
+                  <label class="form-check">
+                    <input class="form-check-input" type="checkbox" />
+                    <span class="form-check-label">Penthouse</span>
+                  </label>
+                </div>
+
+                <hr class="my-4" />
+
+                <h5 class="card-title h6 mb-2">Property Size</h5>
+                <p class="small text-muted mb-1">Size: 0 – 2400 sqft</p>
+                <div class="d-flex align-items-center gap-2">
+                  <span class="small">$0</span>
+                  <input type="range" class="form-range flex-grow-1" min="0" max="2400" value="1200" />
+                  <span class="small">2400</span>
+                </div>
+
+                <hr class="my-4" />
+
+                <h5 class="card-title h6 mb-2">Price Range</h5>
+                <p class="small text-muted mb-1">Price: $10,000 – $30,000</p>
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <span class="small">$10,000</span>
+                  <input type="range" class="form-range flex-grow-1" min="10000" max="30000" value="18000" />
+                  <span class="small">$30,000</span>
+                </div>
+
+                <hr class="my-4" />
+
+                <h5 class="card-title h6 mb-3">Rooms</h5>
+                <div class="row g-2">
+                  <div class="col-6">
+                    <label class="form-label small mb-1">Bedroom</label>
+                    <div class="input-group input-group-sm">
+                      <button class="btn btn-outline-secondary" type="button">-</button>
+                      <input type="text" class="form-control text-center" value="3" />
+                      <button class="btn btn-outline-secondary" type="button">+</button>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <label class="form-label small mb-1">Bathroom</label>
+                    <div class="input-group input-group-sm">
+                      <button class="btn btn-outline-secondary" type="button">-</button>
+                      <input type="text" class="form-control text-center" value="2" />
+                      <button class="btn btn-outline-secondary" type="button">+</button>
+                    </div>
+                  </div>
+                </div>
+
+                <button class="btn btn-primary w-100 mt-4 btn-sm">Apply Filters</button>
+              </div>
+            </div>
+          </aside>
+
+          <!-- Properties Grid -->
+          <div class="col-lg-9">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-3">
+              <div class="small text-muted">
+                Showing <span class="fw-semibold">1–16</span> of <span class="fw-semibold">72</span> properties
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <span class="small text-muted">Sort by:</span>
+                <select class="form-select form-select-sm w-auto">
+                  <option>Price: Low to High</option>
+                  <option>Price: High to Low</option>
+                  <option>Newest First</option>
+                  <option>Popular</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row g-4">
+              <!-- Property Card 1 -->
+              <div class="col-md-6 col-xl-4">
+                <article class="card property-card h-100 border-0 shadow-sm">
+                  <div class="position-relative">
+                    <img src="images/properties/property-1.avif" class="card-img-top"
+                      alt="Luxury Apartment in California" />
+                    <span class="badge bg-primary position-absolute top-0 start-0 m-2">For Sale</span>
+                    <button
+                      class="btn btn-light btn-sm rounded-circle position-absolute top-0 end-0 m-2 property-favorite">
+                      <i class="far fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <h5 class="card-title mb-0">Luxury Apartment in California</h5>
+                      <span class="fw-semibold text-primary">$250,000</span>
+                    </div>
+                    <p class="card-text small text-muted mb-2">
+                      Modern 3 BHK apartment with balcony views and covered parking in a gated community.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2 small mb-3">
+                      <span class="badge bg-light text-dark"><i class="fas fa-bed me-1"></i>3 Beds</span>
+                      <span class="badge bg-light text-dark"><i class="fas fa-bath me-1"></i>2 Baths</span>
+                      <span class="badge bg-light text-dark"><i class="fas fa-ruler-combined me-1"></i>1,450 sqft</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="d-flex align-items-center gap-2">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <div>
+                          <div class="small fw-semibold mb-0">Alexa Mate</div>
+                          <div class="small text-muted">California, USA</div>
+                        </div>
+                      </div>
+                      <a href="property-details.html" class="btn btn-outline-primary btn-sm">View Details</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Property Card 2 -->
+              <div class="col-md-6 col-xl-4">
+                <article class="card property-card h-100 border-0 shadow-sm">
+                  <div class="position-relative">
+                    <img src="images/properties/property-2.avif" class="card-img-top" alt="Elegant Villa sale in Miami" />
+                    <span class="badge bg-primary position-absolute top-0 start-0 m-2">For Sale</span>
+                    <button
+                      class="btn btn-light btn-sm rounded-circle position-absolute top-0 end-0 m-2 property-favorite">
+                      <i class="far fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <h5 class="card-title mb-0">Elegant Villa sale in Miami</h5>
+                      <span class="fw-semibold text-primary">$7,500,000</span>
+                    </div>
+                    <p class="card-text small text-muted mb-2">
+                      Luxury sea-facing villa with private pool, garden and premium security in Miami Beach.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2 small mb-3">
+                      <span class="badge bg-light text-dark"><i class="fas fa-bed me-1"></i>5 Beds</span>
+                      <span class="badge bg-light text-dark"><i class="fas fa-bath me-1"></i>4 Baths</span>
+                      <span class="badge bg-light text-dark"><i class="fas fa-ruler-combined me-1"></i>3,200 sqft</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="d-flex align-items-center gap-2">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <div>
+                          <div class="small fw-semibold mb-0">Smith Watson</div>
+                          <div class="small text-muted">Miami, USA</div>
+                        </div>
+                      </div>
+                      <a href="property-details.html" class="btn btn-outline-primary btn-sm">View Details</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Property Card 3 -->
+              <div class="col-md-6 col-xl-4">
+                <article class="card property-card h-100 border-0 shadow-sm">
+                  <div class="position-relative">
+                    <img src="images/properties/property-3.avif" class="card-img-top"
+                      alt="Duplex Apartment for Rent in California" />
+                    <span class="badge bg-secondary position-absolute top-0 start-0 m-2">For Rent</span>
+                    <button
+                      class="btn btn-light btn-sm rounded-circle position-absolute top-0 end-0 m-2 property-favorite">
+                      <i class="far fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <h5 class="card-title mb-0">Duplex Apartment for Rent</h5>
+                      <span class="fw-semibold text-primary">$4,378<span class="small text-muted"> /mo</span></span>
+                    </div>
+                    <p class="card-text small text-muted mb-2">
+                      Fully furnished duplex with spacious living area, study corner and reserved parking.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2 small mb-3">
+                      <span class="badge bg-light text-dark"><i class="fas fa-bed me-1"></i>2 Beds</span>
+                      <span class="badge bg-light text-dark"><i class="fas fa-bath me-1"></i>2 Baths</span>
+                      <span class="badge bg-light text-dark"><i class="fas fa-ruler-combined me-1"></i>1,150 sqft
+                      </span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="d-flex align-items-center gap-2">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <div>
+                          <div class="small fw-semibold mb-0">Robert Fox</div>
+                          <div class="small text-muted">California, USA</div>
+                        </div>
+                      </div>
+                      <a href="property-details.html" class="btn btn-outline-primary btn-sm">View Details</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Property Card 4 -->
+              <div class="col-md-6 col-xl-4">
+                <article class="card property-card h-100 border-0 shadow-sm">
+                  <div class="position-relative">
+                    <img src="images/properties/property-4.avif" class="card-img-top" alt="Modern Penthouse in Chicago" />
+                    <span class="badge bg-primary position-absolute top-0 start-0 m-2">For Sale</span>
+                    <button
+                      class="btn btn-light btn-sm rounded-circle position-absolute top-0 end-0 m-2 property-favorite">
+                      <i class="far fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <h5 class="card-title mb-0">Modern Penthouse in Chicago</h5>
+                      <span class="fw-semibold text-primary">$1,200,000</span>
+                    </div>
+                    <p class="card-text small text-muted mb-2">
+                      Penthouse with panoramic city views, rooftop terrace and smart home automation.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2 small mb-3">
+                      <span class="badge bg-light text-dark"><i class="fas fa-bed me-1"></i>4 Beds</span>
+                      <span class="badge bg-light text-dark"><i class="fas fa-bath me-1"></i>3 Baths</span>
+                      <span class="badge bg-light text-dark"><i class="fas fa-ruler-combined me-1"></i>2,850 sqft</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="d-flex align-items-center gap-2">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <div>
+                          <div class="small fw-semibold mb-0">Emily Chen</div>
+                          <div class="small text-muted">Chicago, USA</div>
+                        </div>
+                      </div>
+                      <a href="property-details.html" class="btn btn-outline-primary btn-sm">View Details</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Property Card 5 -->
+              <div class="col-md-6 col-xl-4">
+                <article class="card property-card h-100 border-0 shadow-sm">
+                  <div class="position-relative">
+                    <img src="images/properties/property-5.avif" class="card-img-top" alt="Cozy Studio Apartment NYC" />
+                    <span class="badge bg-secondary position-absolute top-0 start-0 m-2">For Rent</span>
+                    <button
+                      class="btn btn-light btn-sm rounded-circle position-absolute top-0 end-0 m-2 property-favorite">
+                      <i class="far fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <h5 class="card-title mb-0">Cozy Studio Apartment NYC</h5>
+                      <span class="fw-semibold text-primary">$2,800<span class="small text-muted"> /mo</span></span>
+                    </div>
+                    <p class="card-text small text-muted mb-2">
+                      Compact studio in Manhattan with modern kitchen, gym access and 24/7 concierge.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2 small mb-3">
+                      <span class="badge bg-light text-dark"><i class="fas fa-bed me-1"></i>Studio</span>
+                      <span class="badge bg-light text-dark"><i class="fas fa-bath me-1"></i>1 Bath</span>
+                      <span class="badge bg-light text-dark"><i class="fas fa-ruler-combined me-1"></i>650 sqft</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="d-flex align-items-center gap-2">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <div>
+                          <div class="small fw-semibold mb-0">Michael Brown</div>
+                          <div class="small text-muted">New York, USA</div>
+                        </div>
+                      </div>
+                      <a href="property-details.html" class="btn btn-outline-primary btn-sm">View Details</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Property Card 6 -->
+              <div class="col-md-6 col-xl-4">
+                <article class="card property-card h-100 border-0 shadow-sm">
+                  <div class="position-relative">
+                    <img src="images/properties/property-6.avif" class="card-img-top"
+                      alt="Spacious Family Home San Francisco" />
+                    <span class="badge bg-primary position-absolute top-0 start-0 m-2">For Sale</span>
+                    <button
+                      class="btn btn-light btn-sm rounded-circle position-absolute top-0 end-0 m-2 property-favorite">
+                      <i class="far fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <h5 class="card-title mb-0">Spacious Family Home</h5>
+                      <span class="fw-semibold text-primary">$950,000</span>
+                    </div>
+                    <p class="card-text small text-muted mb-2">
+                      Family-friendly home with backyard, garage, near top schools and public transport.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2 small mb-3">
+                      <span class="badge bg-light text-dark"><i class="fas fa-bed me-1"></i>4 Beds</span>
+                      <span class="badge bg-light text-dark"><i class="fas fa-bath me-1"></i>3 Baths</span>
+                      <span class="badge bg-light text-dark"><i class="fas fa-ruler-combined me-1"></i>2,100 sqft</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="d-flex align-items-center gap-2">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <div>
+                          <div class="small fw-semibold mb-0">Sarah Johnson</div>
+                          <div class="small text-muted">San Francisco, USA</div>
+                        </div>
+                      </div>
+                      <a href="property-details.html" class="btn btn-outline-primary btn-sm">View Details</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Property Card 7 -->
+              <div class="col-md-6 col-xl-4">
+                <article class="card property-card h-100 border-0 shadow-sm">
+                  <div class="position-relative">
+                    <img src="images/properties/property-7.avif" class="card-img-top" alt="Beachfront Condo Miami" />
+                    <span class="badge bg-primary position-absolute top-0 start-0 m-2">For Sale</span>
+                    <button
+                      class="btn btn-light btn-sm rounded-circle position-absolute top-0 end-0 m-2 property-favorite">
+                      <i class="far fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <h5 class="card-title mb-0">Beachfront Condo Miami</h5>
+                      <span class="fw-semibold text-primary">$850,000</span>
+                    </div>
+                    <p class="card-text small text-muted mb-2">
+                      Direct beach access, ocean views from all rooms, resort-style amenities included.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2 small mb-3">
+                      <span class="badge bg-light text-dark"><i class="fas fa-bed me-1"></i>3 Beds</span>
+                      <span class="badge bg-light text-dark"><i class="fas fa-bath me-1"></i>2 Baths</span>
+                      <span class="badge bg-light text-dark"><i class="fas fa-ruler-combined me-1"></i>1,800 sqft</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="d-flex align-items-center gap-2">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <div>
+                          <div class="small fw-semibold mb-0">Smith Watson</div>
+                          <div class="small text-muted">Miami, USA</div>
+                        </div>
+                      </div>
+                      <a href="property-details.html" class="btn btn-outline-primary btn-sm">View Details</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Property Card 8 -->
+              <div class="col-md-6 col-xl-4">
+                <article class="card property-card h-100 border-0 shadow-sm">
+                  <div class="position-relative">
+                    <img src="images/properties/property-8.avif" class="card-img-top" alt="Downtown Loft Los Angeles" />
+                    <span class="badge bg-secondary position-absolute top-0 start-0 m-2">For Rent</span>
+                    <button
+                      class="btn btn-light btn-sm rounded-circle position-absolute top-0 end-0 m-2 property-favorite">
+                      <i class="far fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <h5 class="card-title mb-0">Downtown Loft Los Angeles</h5>
+                      <span class="fw-semibold text-primary">$3,200<span class="small text-muted"> /mo</span></span>
+                    </div>
+                    <p class="card-text small text-muted mb-2">
+                      Industrial-chic loft with exposed brick, high ceilings and walking distance to cafes.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2 small mb-3">
+                      <span class="badge bg-light text-dark"><i class="fas fa-bed me-1"></i>2 Beds</span>
+                      <span class="badge bg-light text-dark"><i class="fas fa-bath me-1"></i>2 Baths</span>
+                      <span class="badge bg-light text-dark"><i class="fas fa-ruler-combined me-1"></i>1,400 sqft</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="d-flex align-items-center gap-2">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <div>
+                          <div class="small fw-semibold mb-0">David Lee</div>
+                          <div class="small text-muted">Los Angeles, USA</div>
+                        </div>
+                      </div>
+                      <a href="property-details.html" class="btn btn-outline-primary btn-sm">View Details</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Property Card 9 -->
+              <div class="col-md-6 col-xl-4">
+                <article class="card property-card h-100 border-0 shadow-sm">
+                  <div class="position-relative">
+                    <img src="images/properties/property-1.avif" class="card-img-top" alt="Suburban Villa Texas" />
+                    <span class="badge bg-primary position-absolute top-0 start-0 m-2">For Sale</span>
+                    <button
+                      class="btn btn-light btn-sm rounded-circle position-absolute top-0 end-0 m-2 property-favorite">
+                      <i class="far fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <h5 class="card-title mb-0">Suburban Villa Texas</h5>
+                      <span class="fw-semibold text-primary">$620,000</span>
+                    </div>
+                    <p class="card-text small text-muted mb-2">
+                      Spacious villa with pool, large yard, kids play area and gated community security.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2 small mb-3">
+                      <span class="badge bg-light text-dark"><i class="fas fa-bed me-1"></i>5 Beds</span>
+                      <span class="badge bg-light text-dark"><i class="fas fa-bath me-1"></i>3 Baths</span>
+                      <span class="badge bg-light text-dark"><i class="fas fa-ruler-combined me-1"></i>2,900 sqft</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="d-flex align-items-center gap-2">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <div>
+                          <div class="small fw-semibold mb-0">Alexa Mate</div>
+                          <div class="small text-muted">Texas, USA</div>
+                        </div>
+                      </div>
+                      <a href="property-details.html" class="btn btn-outline-primary btn-sm">View Details</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+            </div>
+
+            <!-- Pagination -->
+            <nav aria-label="Properties pagination" class="mt-5">
+              <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1">Previous</a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============= FOOTER ============= -->
+  <footer>
+    <div class="container">
+      <div class="row g-4 mb-4">
+        <div class="col-md-6 col-lg-3 footer-col">
+          <h5>About</h5>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.8;">Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Imperdiet tempus felis vitae sit est quisque.</p>
+        </div>
+        <div class="col-md-6 col-lg-3 footer-col">
+          <h5>Service</h5>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="property-details.html">Features</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="agents.html">Agents</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3 footer-col">
+          <h5>Our Location</h5>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.8;">2972 Westheimer Rd. Santa Ana,
+            Illinois 85486</p>
+        </div>
+        <div class="col-md-6 col-lg-3 footer-col">
+          <h5>Newsletter</h5>
+          <div class="footer-newsletter">
+            <input type="email" placeholder="Your email">
+            <button>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+          <div class="social-icons">
+            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="row">
+          <div class="col-md-6">
+            <p>&copy; 2025 Compass Housing Society. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <a href="#" style="color: var(--text-secondary); text-decoration: none; margin: 0 1rem;">Terms &
+              Conditions</a>
+            <a href="#" style="color: var(--text-secondary); text-decoration: none; margin: 0 1rem;">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- FontAwesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

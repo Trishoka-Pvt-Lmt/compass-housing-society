@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compass Housing Society - Find Your Dream Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logos/compasshousingsocietynobg.png" type="image/x-icon" />
+
+</head>
+
+<body class="light-mode">
+    <!-- ============= PAGE LOADER ============= -->
+    <div class="page-loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- ============= NAVBAR ============= -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logos/compasshousingsociety.png" alt="&nbsp;" class="logo"/>&nbsp;<span>Compass Housing Society</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index-2.html">Home2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="properties.html">Properties</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="agents.html">Agents</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <button class="mode-toggle" id="modeToggle" title="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="rtl-toggle" id="rtlToggle" title="Toggle RTL">
+                    <i class="fas fa-globe"></i>
+                </button>
+                <a href="login.html" class="btn btn-primary ms-2">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============= HERO SECTION ============= -->
+    <section class="hero1" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <h1>Let's start search for your dream home</h1>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its layout.</p>
+                    <button class="btn-primary-custom">
+                        <i class="fas fa-search me-2"></i>Get Started
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= SEARCH SECTION ============= -->
+    <section class="pb-5">
+        <div class="container">
+            <div class="search-section">
+                <div class="row g-3 align-items-end">
+                    <div class="col-md-3">
+                        <label class="form-label fw-600">Location</label>
+                        <input type="text" class="form-control" placeholder="California, United State">
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label fw-600">Price</label>
+                        <select class="form-select">
+                            <option selected>$1000-$10,000</option>
+                            <option>$10,000-$20,000</option>
+                            <option>$20,000-$50,000</option>
+                            <option>$50,000+</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label fw-600">Type of Property</label>
+                        <select class="form-select">
+                            <option selected>Apartment</option>
+                            <option>Villa</option>
+                            <option>Duplex</option>
+                            <option>Studio</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="search-btn">
+                            <i class="fas fa-search me-2"></i>Search
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= FEATURES SECTION ============= -->
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Why should good house for you?</h2>
+            <p class="section-subtitle">Using it can make you sound like you have been studying english for a long time.
+                Here's the challenge</p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Best Platform</h4>
+                        <p>Using it can make you sound like you have been studying english for a long time. Here's the
+                            challenge</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Guaranteed Service</h4>
+                        <p>Using it can make you sound like you have been studying english for a long time. Here's the
+                            challenge</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h4>Verified Platform</h4>
+                        <p>Using it can make you sound like you have been studying english for a long time. Here's the
+                            challenge</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h4>Award Winning</h4>
+                        <p>Using it can make you sound like you have been studying english for a long time. Here's the
+                            challenge</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= FEATURED PROPERTIES SECTION ============= -->
+    <section class="properties-section" id="properties">
+        <div class="container">
+            <h2 class="section-title">Explore the latest properties available</h2>
+            <p class="section-subtitle">Using it can make you sound like you have been studying english for a long time.
+                Here's the challenge</p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="property-card">
+                        <div class="property-image">
+                            🏢
+                            <button class="property-favorite">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="property-details">
+                            <h5 class="property-title">Luxury Apartment in California</h5>
+                            <p class="property-location">
+                                <i class="fas fa-map-marker-alt"></i>California, USA
+                            </p>
+                            <p class="property-price">$250,000</p>
+                            <p class="property-desc">Using it can make you sound like you have been studying english for
+                                a long time</p>
+                            <div class="property-meta">
+                                <span><i class="fas fa-door-open"></i> 2 BHK</span>
+                                <span><i class="fas fa-bath"></i> 2 Bath</span>
+                                <span><i class="fas fa-expand"></i> 1200 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="property-card">
+                        <div class="property-image">
+                            🏠
+                            <button class="property-favorite">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="property-details">
+                            <h5 class="property-title">Elegant Villa sale in Miami</h5>
+                            <p class="property-location">
+                                <i class="fas fa-map-marker-alt"></i>Miami, USA
+                            </p>
+                            <p class="property-price">$750,000</p>
+                            <p class="property-desc">Using it can make you sound like you have been studying english for
+                                a long time</p>
+                            <div class="property-meta">
+                                <span><i class="fas fa-door-open"></i> 3 BHK</span>
+                                <span><i class="fas fa-bath"></i> 3 Bath</span>
+                                <span><i class="fas fa-expand"></i> 2500 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="property-card">
+                        <div class="property-image">
+                            🏘️
+                            <button class="property-favorite">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="property-details">
+                            <h5 class="property-title">Duplex Apartment for Rent in California</h5>
+                            <p class="property-location">
+                                <i class="fas fa-map-marker-alt"></i>California, USA
+                            </p>
+                            <p class="property-price">$4,378/month</p>
+                            <p class="property-desc">Using it can make you sound like you have been studying english for
+                                a long time</p>
+                            <div class="property-meta">
+                                <span><i class="fas fa-door-open"></i> 2 BHK</span>
+                                <span><i class="fas fa-bath"></i> 2 Bath</span>
+                                <span><i class="fas fa-expand"></i> 1500 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="property-card">
+                        <div class="property-image">
+                            🏗️
+                            <button class="property-favorite">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="property-details">
+                            <h5 class="property-title">Modern Studio in New York</h5>
+                            <p class="property-location">
+                                <i class="fas fa-map-marker-alt"></i>New York, USA
+                            </p>
+                            <p class="property-price">$400,000</p>
+                            <p class="property-desc">Using it can make you sound like you have been studying english for
+                                a long time</p>
+                            <div class="property-meta">
+                                <span><i class="fas fa-door-open"></i> 1 BHK</span>
+                                <span><i class="fas fa-bath"></i> 1 Bath</span>
+                                <span><i class="fas fa-expand"></i> 600 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="property-card">
+                        <div class="property-image">
+                            🏡
+                            <button class="property-favorite">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="property-details">
+                            <h5 class="property-title">Cozy Apartment in Chicago</h5>
+                            <p class="property-location">
+                                <i class="fas fa-map-marker-alt"></i>Chicago, USA
+                            </p>
+                            <p class="property-price">$7,865/month</p>
+                            <p class="property-desc">Using it can make you sound like you have been studying english for
+                                a long time</p>
+                            <div class="property-meta">
+                                <span><i class="fas fa-door-open"></i> 2 BHK</span>
+                                <span><i class="fas fa-bath"></i> 1 Bath</span>
+                                <span><i class="fas fa-expand"></i> 1000 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="property-card">
+                        <div class="property-image">
+                            🏢
+                            <button class="property-favorite">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="property-details">
+                            <h5 class="property-title">Premium Tower Apartment</h5>
+                            <p class="property-location">
+                                <i class="fas fa-map-marker-alt"></i>Los Angeles, USA
+                            </p>
+                            <p class="property-price">$4,579,920</p>
+                            <p class="property-desc">Using it can make you sound like you have been studying english for
+                                a long time</p>
+                            <div class="property-meta">
+                                <span><i class="fas fa-door-open"></i> 4 BHK</span>
+                                <span><i class="fas fa-bath"></i> 4 Bath</span>
+                                <span><i class="fas fa-expand"></i> 3500 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= AGENTS SECTION ============= -->
+    <section class="agents-section" id="agents">
+        <div class="container">
+            <h2 class="section-title">Our Agents</h2>
+            <p class="section-subtitle">Using it can make you sound like you have been studying english for a long time.
+                Here's the challenge</p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="agent-card">
+                        <div class="agent-image">
+                            👨‍💼
+                        </div>
+                        <div class="agent-info">
+                            <h4 class="agent-name">Johnson Watson</h4>
+                            <p class="agent-role">Real Estate Agent</p>
+                            <p class="agent-desc">It is a long established fact that a reader will be distracted by the
+                                readable content of a page when looking at its layout.</p>
+                            <div class="agent-contact">
+                                <a href="tel:+1234567890" title="Call">
+                                    <i class="fas fa-phone"></i>
+                                </a>
+                                <a href="mailto:johnson@housing.com" title="Email">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                                <a href="#" title="WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="agent-card">
+                        <div class="agent-image">
+                            👩‍💼
+                        </div>
+                        <div class="agent-info">
+                            <h4 class="agent-name">Leasie Willions</h4>
+                            <p class="agent-role">Real Estate Agent</p>
+                            <p class="agent-desc">It is a long established fact that a reader will be distracted by the
+                                readable content of a page when looking at its layout.</p>
+                            <div class="agent-contact">
+                                <a href="tel:+1234567891" title="Call">
+                                    <i class="fas fa-phone"></i>
+                                </a>
+                                <a href="mailto:leasie@housing.com" title="Email">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                                <a href="#" title="WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="agent-card">
+                        <div class="agent-image">
+                            👨‍💼
+                        </div>
+                        <div class="agent-info">
+                            <h4 class="agent-name">Mark Allen</h4>
+                            <p class="agent-role">Real Estate Agent</p>
+                            <p class="agent-desc">It is a long established fact that a reader will be distracted by the
+                                readable content of a page when looking at its layout.</p>
+                            <div class="agent-contact">
+                                <a href="tel:+1234567892" title="Call">
+                                    <i class="fas fa-phone"></i>
+                                </a>
+                                <a href="mailto:mark@housing.com" title="Email">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                                <a href="#" title="WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= FEATURED PROPERTY DETAIL SECTION ============= -->
+    <section class="properties-section">
+        <div class="container">
+            <h2 class="section-title">Featured Properties</h2>
+            <p class="section-subtitle">Using it can make you sound like you have been studying english for a long time.
+                Here's the challenge</p>
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="property-card">
+                        <div
+                            style="width: 100%; height: 350px; background: linear-gradient(135deg, #3E54EB, rgba(62, 84, 235, 0.3)); display: flex; align-items: center; justify-content: center; font-size: 5rem; color: white; border-radius: 12px 12px 0 0;">
+                            🏰
+                        </div>
+                        <div class="property-details" style="padding: 2rem;">
+                            <h4 class="property-title" style="font-size: 1.5rem;">Modern luxury sea view villa sale in
+                                California</h4>
+                            <p class="property-location" style="font-size: 1rem;">
+                                <i class="fas fa-map-marker-alt"></i>Santa Monica, California, USA
+                            </p>
+                            <p class="property-price" style="font-size: 1.8rem;">$8,500,000</p>
+                            <p class="property-desc">It is a long established fact that a reader will be distracted by
+                                the readable content of a page when looking at its layout.</p>
+                            <button class="btn-primary-custom">More Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card"
+                        style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem;">
+                        <h5 style="color: var(--text-primary); margin-bottom: 1.5rem; font-weight: 600;">Property
+                            Details</h5>
+                        <ul style="list-style: none; padding: 0;">
+                            <li
+                                style="padding: 0.8rem 0; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between;">
+                                <span style="color: var(--text-secondary);">Bedrooms:</span>
+                                <strong style="color: var(--text-primary);">5</strong>
+                            </li>
+                            <li
+                                style="padding: 0.8rem 0; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between;">
+                                <span style="color: var(--text-secondary);">Bathrooms:</span>
+                                <strong style="color: var(--text-primary);">4</strong>
+                            </li>
+                            <li
+                                style="padding: 0.8rem 0; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between;">
+                                <span style="color: var(--text-secondary);">Area:</span>
+                                <strong style="color: var(--text-primary);">5,600 sqft</strong>
+                            </li>
+                            <li
+                                style="padding: 0.8rem 0; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between;">
+                                <span style="color: var(--text-secondary);">Year Built:</span>
+                                <strong style="color: var(--text-primary);">2022</strong>
+                            </li>
+                            <li style="padding: 0.8rem 0; display: flex; justify-content: space-between;">
+                                <span style="color: var(--text-secondary);">Status:</span>
+                                <strong style="color: var(--clr-primary);">For Sale</strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= TESTIMONIALS SECTION ============= -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Testimonials</h2>
+            <p class="section-subtitle">Using it can make you sound like you have been studying english for a long time.
+                Here's the challenge</p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"It is a long established fact that a reader will be distracted by
+                            the readable content of a page when looking at its layout."</p>
+                        <p class="testimonial-author">Robert Hawkins</p>
+                        <p class="testimonial-location">California, United State</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"It is a long established fact that a reader will be distracted by
+                            the readable content of a page when looking at its layout."</p>
+                        <p class="testimonial-author">Dianne Russell</p>
+                        <p class="testimonial-location">California, United State</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"It is a long established fact that a reader will be distracted by
+                            the readable content of a page when looking at its layout."</p>
+                        <p class="testimonial-author">Cody Fisher</p>
+                        <p class="testimonial-location">California, United State</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"It is a long established fact that a reader will be distracted by
+                            the readable content of a page when looking at its layout."</p>
+                        <p class="testimonial-author">Cameron Williamson</p>
+                        <p class="testimonial-location">California, United State</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"It is a long established fact that a reader will be distracted by
+                            the readable content of a page when looking at its layout."</p>
+                        <p class="testimonial-author">Wade Warren</p>
+                        <p class="testimonial-location">California, United State</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"It is a long established fact that a reader will be distracted by
+                            the readable content of a page when looking at its layout."</p>
+                        <p class="testimonial-author">Marvin McKinney</p>
+                        <p class="testimonial-location">California, United State</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= FOOTER ============= -->
+    <footer>
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-md-6 col-lg-3 footer-col">
+                    <h5>About</h5>
+                    <img src="images/logos/compasshousingsocietynobg.png" alt="Compass Housing Society" class="footer-logo"/>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.8;">Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. Imperdiet tempus felis vitae sit est quisque.</p>
+                </div>
+                <div class="col-md-6 col-lg-3 footer-col">
+                    <h5>Service</h5>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="property-details.html">Features</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="agents.html">Agents</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3 footer-col">
+                    <h5>Our Location</h5>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.8;">1234 Kingsthrone Rd.
+                        Santa villa, santras 85486</p>
+                </div>
+                <div class="col-md-6 col-lg-3 footer-col">
+                    <h5>Newsletter</h5>
+                    <form>
+                    <div class="footer-newsletter">
+                        <input type="email" placeholder="Your email" required>
+                        <button>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    </form>
+                    <div class="social-icons">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; 2025 Compass Housing Society. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <a href="#" style="color: var(--text-secondary); text-decoration: none; margin: 0 1rem;">Terms &
+                            Conditions</a>
+                        <a href="#" style="color: var(--text-secondary); text-decoration: none; margin: 0 1rem;">Privacy
+                            Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============= SCRIPTS ============= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Fixed Buttons - WhatsApp & Go to Top -->
+<div class="fixed-buttons">
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/919999999999" class="btn-whatsapp" target="_blank" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  
+  <!-- Go to Top Button -->
+  <!-- <button class="btn-go-top" id="goTopBtn" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </button> -->
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luxury Apartment in California - Compass Housing Society</title>
+
+  <!-- Google Font & Bootstrap -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="light-mode">
+
+  <!-- PAGE LOADER -->
+  <div class="page-loader d-flex align-items-center justify-content-center">
+    <div class="loader-circle"></div>
+  </div>
+
+  <!-- ============= NAVBAR ============= -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logos/compasshousingsociety.png" alt="&nbsp;" class="logo"/>&nbsp;Compass Housing Society
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index-2.html">Home2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="properties.html">Properties</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="agents.html">Agents</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <button class="mode-toggle" id="modeToggle" title="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="rtl-toggle" id="rtlToggle" title="Toggle RTL">
+                    <i class="fas fa-globe"></i>
+                </button>
+                <a href="login.html" class="btn btn-primary ms-2">Login</a>
+            </div>
+        </div>
+    </nav>
+
+  <main class="main-content">
+
+    <!-- Breadcrumb -->
+    <section class="py-3 border-bottom bg-white">
+      <div class="container">
+        <p class="text-muted mb-0 small">
+          Home &gt; Properties &gt; <span class="text-dark fw-semibold">Luxury Apartment in California</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- Property Details -->
+    <section class="py-5 py-lg-6">
+      <div class="container">
+        <div class="row g-4 g-lg-5">
+          
+          <!-- Left Column - Images & Details -->
+          <div class="col-lg-8">
+            
+            <!-- Property Title & Price -->
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-start gap-3 mb-4">
+              <div>
+                <h1 class="h2 mb-2">Luxury Apartment in California</h1>
+                <p class="text-muted mb-0">
+                  <i class="fas fa-map-marker-alt me-2"></i>
+                  2118 Thornridge Cir, Syracuse, California 35624, USA
+                </p>
+              </div>
+              <div class="text-end">
+                <div class="h3 text-primary mb-0">$250,000</div>
+                <div class="small text-muted">$1,250 per sqft</div>
+              </div>
+            </div>
+
+            <!-- Image Gallery -->
+            <div class="property-gallery mb-4">
+              <div class="row g-2">
+                <div class="col-12">
+                  <img src="img/properties/property-1.jpg" class="img-fluid rounded shadow-sm main-property-img" alt="Main property" />
+                </div>
+                <div class="col-3">
+                  <img src="img/properties/property-2.jpg" class="img-fluid rounded shadow-sm gallery-thumb" alt="Gallery 1" />
+                </div>
+                <div class="col-3">
+                  <img src="img/properties/property-3.jpg" class="img-fluid rounded shadow-sm gallery-thumb" alt="Gallery 2" />
+                </div>
+                <div class="col-3">
+                  <img src="img/properties/property-4.jpg" class="img-fluid rounded shadow-sm gallery-thumb" alt="Gallery 3" />
+                </div>
+                <div class="col-3">
+                  <div class="position-relative">
+                    <img src="img/properties/property-5.jpg" class="img-fluid rounded shadow-sm gallery-thumb" alt="Gallery 4" />
+                    <div class="gallery-more-overlay rounded d-flex align-items-center justify-content-center">
+                      <span class="text-white fw-semibold"><i class="fas fa-images me-2"></i>+12 More</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Stats -->
+            <div class="card border-0 shadow-sm mb-4">
+              <div class="card-body">
+                <div class="row g-3 text-center">
+                  <div class="col-6 col-md-3">
+                    <div class="stat-icon mb-2">
+                      <i class="fas fa-bed fa-2x text-primary"></i>
+                    </div>
+                    <div class="fw-semibold">3 Bedrooms</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="stat-icon mb-2">
+                      <i class="fas fa-bath fa-2x text-primary"></i>
+                    </div>
+                    <div class="fw-semibold">2 Bathrooms</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="stat-icon mb-2">
+                      <i class="fas fa-ruler-combined fa-2x text-primary"></i>
+                    </div>
+                    <div class="fw-semibold">1,450 sqft</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="stat-icon mb-2">
+                      <i class="fas fa-car fa-2x text-primary"></i>
+                    </div>
+                    <div class="fw-semibold">2 Parking</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Description -->
+            <div class="card border-0 shadow-sm mb-4">
+              <div class="card-body">
+                <h2 class="h4 mb-3">Property Description</h2>
+                <p class="text-muted">
+                  Welcome to this stunning 3-bedroom luxury apartment located in the heart of California. This modern residence offers the perfect blend of comfort, style and convenience. Featuring an open-concept living space with floor-to-ceiling windows that flood the home with natural light, this property is ideal for families and professionals alike.
+                </p>
+                <p class="text-muted">
+                  The gourmet kitchen is equipped with high-end stainless steel appliances, granite countertops and custom cabinetry. The spacious master bedroom includes a walk-in closet and a luxurious en-suite bathroom with dual vanities and a soaking tub. Two additional bedrooms provide ample space for family members or guests.
+                </p>
+                <p class="text-muted mb-0">
+                  Residents enjoy access to premium amenities including a state-of-the-art fitness center, swimming pool, children's play area and 24/7 security. The property is conveniently located near top-rated schools, shopping centers, restaurants and public transportation.
+                </p>
+              </div>
+            </div>
+
+            <!-- Property Details Table -->
+            <div class="card border-0 shadow-sm mb-4">
+              <div class="card-body">
+                <h2 class="h4 mb-3">Property Details</h2>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <table class="table table-borderless property-details-table mb-0">
+                      <tbody>
+                        <tr>
+                          <td class="text-muted">Property ID:</td>
+                          <td class="fw-semibold">HS-2025-001</td>
+                        </tr>
+                        <tr>
+                          <td class="text-muted">Property Type:</td>
+                          <td class="fw-semibold">Apartment</td>
+                        </tr>
+                        <tr>
+                          <td class="text-muted">Property Status:</td>
+                          <td><span class="badge bg-success">For Sale</span></td>
+                        </tr>
+                        <tr>
+                          <td class="text-muted">Year Built:</td>
+                          <td class="fw-semibold">2022</td>
+                        </tr>
+                        <tr>
+                          <td class="text-muted">Floors:</td>
+                          <td class="fw-semibold">15th Floor</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="col-md-6">
+                    <table class="table table-borderless property-details-table mb-0">
+                      <tbody>
+                        <tr>
+                          <td class="text-muted">Total Rooms:</td>
+                          <td class="fw-semibold">5</td>
+                        </tr>
+                        <tr>
+                          <td class="text-muted">Garage:</td>
+                          <td class="fw-semibold">2 Cars</td>
+                        </tr>
+                        <tr>
+                          <td class="text-muted">Furnishing:</td>
+                          <td class="fw-semibold">Semi-Furnished</td>
+                        </tr>
+                        <tr>
+                          <td class="text-muted">Facing:</td>
+                          <td class="fw-semibold">East</td>
+                        </tr>
+                        <tr>
+                          <td class="text-muted">HOA Fee:</td>
+                          <td class="fw-semibold">$250/month</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Features & Amenities -->
+            <div class="card border-0 shadow-sm mb-4">
+              <div class="card-body">
+                <h2 class="h4 mb-3">Features & Amenities</h2>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <h5 class="h6 mb-3">Interior Features</h5>
+                    <ul class="list-unstyled">
+                      <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Central Air Conditioning</li>
+                      <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Modular Kitchen</li>
+                      <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Hardwood Flooring</li>
+                      <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Walk-in Closets</li>
+                      <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>High-Speed Internet Ready</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <h5 class="h6 mb-3">Building Amenities</h5>
+                    <ul class="list-unstyled">
+                      <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>24/7 Security & CCTV</li>
+                      <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Swimming Pool</li>
+                      <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Fitness Center</li>
+                      <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Children's Play Area</li>
+                      <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Power Backup</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floor Plan -->
+            <div class="card border-0 shadow-sm mb-4">
+              <div class="card-body">
+                <h2 class="h4 mb-3">Floor Plan</h2>
+                <img src="img/floor-plan.jpg" class="img-fluid rounded" alt="Floor Plan" />
+              </div>
+            </div>
+
+            <!-- Location Map -->
+            <div class="card border-0 shadow-sm mb-4">
+              <div class="card-body">
+                <h2 class="h4 mb-3">Location</h2>
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.27404345775!2d-118.69192993092422!3d34.02016130653294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                          style="border:0;" 
+                          allowfullscreen="" 
+                          loading="lazy" 
+                          referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="mt-3">
+                  <p class="text-muted mb-1"><i class="fas fa-map-marker-alt me-2 text-primary"></i>2118 Thornridge Cir, Syracuse, California 35624, USA</p>
+                  <div class="d-flex flex-wrap gap-3 mt-2 small">
+                    <span><i class="fas fa-school me-1 text-primary"></i>Schools nearby (0.5 km)</span>
+                    <span><i class="fas fa-shopping-cart me-1 text-primary"></i>Shopping Mall (1.2 km)</span>
+                    <span><i class="fas fa-hospital me-1 text-primary"></i>Hospital (2.5 km)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Sidebar -->
+          <div class="col-lg-4">
+            
+            <!-- Agent Card -->
+            <div class="card border-0 shadow-sm mb-4 sticky-top" style="top: 100px;">
+              <div class="card-body">
+                <h5 class="card-title mb-3">Contact Agent</h5>
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <img src="img/agents/agent-1.jpg" class="rounded-circle" width="70" height="70" alt="Alexa Mate" />
+                  <div>
+                    <div class="fw-semibold h6 mb-1">Alexa Mate</div>
+                    <div class="small text-muted">Real Estate Agent</div>
+                    <div class="small">
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <span class="text-muted">(48 reviews)</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <a href="tel:+15551234567" class="btn btn-outline-primary w-100 mb-2">
+                    <i class="fas fa-phone me-2"></i>+1 (555) 123-4567
+                  </a>
+                  <a href="" class="btn btn-outline-primary w-100">
+                    <i class="fas fa-envelope me-2"></i>Email Agent
+                  </a>
+                </div>
+
+                <hr />
+
+                <form class="contact-agent-form">
+                  <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Your Name" required />
+                  </div>
+                  <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Your Email" required />
+                  </div>
+                  <div class="mb-3">
+                    <input type="tel" class="form-control" placeholder="Phone Number" required />
+                  </div>
+                  <div class="mb-3">
+                    <textarea class="form-control" rows="4" placeholder="I'm interested in this property. Please contact me."></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100">
+                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            <!-- Share & Save -->
+            <div class="card border-0 shadow-sm mb-4">
+              <div class="card-body">
+                <div class="d-grid gap-2">
+                  <button class="btn btn-outline-primary">
+                    <i class="far fa-heart me-2"></i>Save Property
+                  </button>
+                  <button class="btn btn-outline-primary">
+                    <i class="fas fa-share-alt me-2"></i>Share Property
+                  </button>
+                  <button class="btn btn-outline-primary">
+                    <i class="fas fa-print me-2"></i>Print Details
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Similar Properties -->
+            <div class="card border-0 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title mb-3">Similar Properties</h5>
+                
+                <!-- Similar Property 1 -->
+                <div class="d-flex gap-2 mb-3 pb-3 border-bottom">
+                  <img src="img/properties/property-2.jpg" class="rounded" width="80" height="80" style="object-fit: cover;" alt="Property" />
+                  <div class="flex-grow-1">
+                    <h6 class="mb-1 small fw-semibold">Elegant Villa in Miami</h6>
+                    <p class="text-muted small mb-1">Miami, USA</p>
+                    <div class="fw-semibold text-primary small">$7,500,000</div>
+                  </div>
+                </div>
+
+                <!-- Similar Property 2 -->
+                <div class="d-flex gap-2 mb-3 pb-3 border-bottom">
+                  <img src="img/properties/property-3.jpg" class="rounded" width="80" height="80" style="object-fit: cover;" alt="Property" />
+                  <div class="flex-grow-1">
+                    <h6 class="mb-1 small fw-semibold">Duplex Apartment</h6>
+                    <p class="text-muted small mb-1">California, USA</p>
+                    <div class="fw-semibold text-primary small">$4,378/mo</div>
+                  </div>
+                </div>
+
+                <!-- Similar Property 3 -->
+                <div class="d-flex gap-2">
+                  <img src="img/properties/property-4.jpg" class="rounded" width="80" height="80" style="object-fit: cover;" alt="Property" />
+                  <div class="flex-grow-1">
+                    <h6 class="mb-1 small fw-semibold">Modern Penthouse</h6>
+                    <p class="text-muted small mb-1">Chicago, USA</p>
+                    <div class="fw-semibold text-primary small">$1,200,000</div>
+                  </div>
+                </div>
+
+                <a href="properties.html" class="btn btn-sm btn-outline-primary w-100 mt-3">View All Properties</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============= FOOTER ============= -->
+    <footer>
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-md-6 col-lg-3 footer-col">
+                    <h5>About</h5>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.8;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet tempus felis vitae sit est quisque.</p>
+                </div>
+                <div class="col-md-6 col-lg-3 footer-col">
+                    <h5>Service</h5>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="property-details.html">Features</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="agents.html">Agents</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3 footer-col">
+                    <h5>Our Location</h5>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.8;">2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+                </div>
+                <div class="col-md-6 col-lg-3 footer-col">
+                    <h5>Newsletter</h5>
+                    <div class="footer-newsletter">
+                        <input type="email" placeholder="Your email">
+                        <button>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; 2025 Compass Housing Society. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <a href="#" style="color: var(--text-secondary); text-decoration: none; margin: 0 1rem;">Terms & Conditions</a>
+                        <a href="#" style="color: var(--text-secondary); text-decoration: none; margin: 0 1rem;">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- FontAwesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

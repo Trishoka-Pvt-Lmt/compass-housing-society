@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register - Compass Housing Society</title>
+
+  <!-- Google Font & Bootstrap -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="light-mode auth-page">
+
+  <!-- PAGE LOADER -->
+  <div class="page-loader d-flex align-items-center justify-content-center">
+    <div class="loader-circle"></div>
+  </div>
+  <!-- ============= NAVBAR ============= -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logos/compasshousingsociety.png" alt="&nbsp;" class="logo"/>&nbsp;Compass Housing Society
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index-2.html">Home2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="properties.html">Properties</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="agents.html">Agents</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <button class="mode-toggle" id="modeToggle" title="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="rtl-toggle" id="rtlToggle" title="Toggle RTL">
+                    <i class="fas fa-globe"></i>
+                </button>
+                <a href="login.html" class="btn btn-primary ms-2">Login</a>
+            </div>
+        </div>
+    </nav>
+ 
+  <div class="auth-wrapper">
+    <div class="container-fluid">
+      <div class="row min-vh-100">
+        
+        <!-- Left Side - Branding -->
+        <div class="col-lg-6 d-none d-lg-flex auth-left-side">
+          <div class="auth-left-content">
+            <div class="logo-wrapper mb-5">
+              <img src="images/logos/compasshousingsocietynobg.png" alt="Compass Housing Society" class="auth-logo" />
+            </div>
+            <h2 class="text-white mb-3">Join Compass Housing Society</h2>
+            <p class="text-white-50 mb-4">
+              Create your account and unlock access to verified properties, expert agents and premium society management tools.
+            </p>
+            <div class="feature-list mt-5">
+              <div class="d-flex align-items-start gap-3 mb-3">
+                <i class="fas fa-check-circle text-white fa-lg mt-1"></i>
+                <div>
+                  <h6 class="text-white mb-1">Verified Listings</h6>
+                  <p class="text-white-50 small mb-0">Access 500+ verified properties</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-start gap-3 mb-3">
+                <i class="fas fa-check-circle text-white fa-lg mt-1"></i>
+                <div>
+                  <h6 class="text-white mb-1">Expert Guidance</h6>
+                  <p class="text-white-50 small mb-0">Connect with 25+ certified agents</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-start gap-3">
+                <i class="fas fa-check-circle text-white fa-lg mt-1"></i>
+                <div>
+                  <h6 class="text-white mb-1">Secure Platform</h6>
+                  <p class="text-white-50 small mb-0">Safe and transparent transactions</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side - Register Form -->
+        <div class="col-lg-6 d-flex align-items-center auth-right-side">
+          <div class="auth-form-wrapper w-100">
+            <div class="text-end mb-4">
+              <a href="index.html" class="btn btn-outline-primary btn-sm">
+                <i class="fas fa-home me-1"></i>Back to Home
+              </a>
+            </div>
+
+            <div class="auth-form-card">
+              <h3 class="mb-2">Create Your Account</h3>
+              <p class="text-muted mb-4">Fill in your details to get started</p>
+
+              <form id="registerForm">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="John" required />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Doe" required />
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="registerEmail" class="form-label">Email Address</label>
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                    <input type="email" class="form-control" id="registerEmail" placeholder="example@anydomain.com" required />
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                    <input type="tel" class="form-control" id="phone" placeholder="+91 99999 99999" required />
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="userRole" class="form-label">I am a</label>
+                  <select class="form-select" id="userRole" required>
+                    <option value="">Select your role</option>
+                    <option value="buyer">Property Buyer</option>
+                    <option value="seller">Property Seller</option>
+                    <option value="owner">Property Owner</option>
+                    <option value="tenant">Tenant/Renter</option>
+                    <option value="agent">Real Estate Agent</option>
+                    <option value="society">Society Admin</option>
+                  </select>
+                </div>
+
+                <div class="mb-3">
+                  <label for="registerPassword" class="form-label">Password</label>
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                    <input type="password" class="form-control" id="registerPassword" placeholder="Create a strong password" required />
+                    <button class="btn btn-outline-secondary" type="button" id="toggleRegPassword">
+                      <i class="fas fa-eye"></i>
+                    </button>
+                  </div>
+                  <small class="text-muted">Must be at least 8 characters with letters and numbers</small>
+                </div>
+
+                <div class="mb-3">
+                  <label for="confirmPassword" class="form-label">Confirm Password</label>
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                    <input type="password" class="form-control" id="confirmPassword" placeholder="Re-enter your password" required />
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="agreeTerms" required />
+                    <label class="form-check-label small" for="agreeTerms">
+                      I agree to the <a href="#" class="text-decoration-none">Terms & Conditions</a> and <a href="#" class="text-decoration-none">Privacy Policy</a>
+                    </label>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100 mb-3">
+                  <i class="fas fa-user-plus me-2"></i>Create Account
+                </button>
+
+                <div class="text-center mb-3">
+                  <span class="text-muted small">Or register with</span>
+                </div>
+
+                <div class="d-flex gap-2 mb-4">
+                  <button type="button" class="btn btn-outline-secondary w-100">
+                    <i class="fab fa-google me-2"></i>Google
+                  </button>
+                  <button type="button" class="btn btn-outline-secondary w-100">
+                    <i class="fab fa-facebook-f me-2"></i>Facebook
+                  </button>
+                </div>
+
+                <div class="text-center">
+                  <p class="text-muted small mb-0">
+                    Already have an account? <a href="login.html" class="text-decoration-none fw-semibold">Login Here</a>
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+<!-- ============= FOOTER ============= -->
+    <footer>
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-md-6 col-lg-3 footer-col">
+                    <h5>About</h5>
+                    <img src="images/logos/compasshousingsocietynobg.png" alt="Compass Housing Society" class="footer-logo"/>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.8;">Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. Imperdiet tempus felis vitae sit est quisque.</p>
+                </div>
+                <div class="col-md-6 col-lg-3 footer-col">
+                    <h5>Service</h5>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="property-details.html">Features</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="agents.html">Agents</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3 footer-col">
+                    <h5>Our Location</h5>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.8;">1234 Kingsthrone Rd.
+                        Santa villa, santras 85486</p>
+                </div>
+                <div class="col-md-6 col-lg-3 footer-col">
+                    <h5>Newsletter</h5>
+                    <form>
+                    <div class="footer-newsletter">
+                        <input type="email" placeholder="Your email" required>
+                        <button>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    </form>
+                    <div class="social-icons">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; 2025 Compass Housing Society. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <a href="#" style="color: var(--text-secondary); text-decoration: none; margin: 0 1rem;">Terms &
+                            Conditions</a>
+                        <a href="#" style="color: var(--text-secondary); text-decoration: none; margin: 0 1rem;">Privacy
+                            Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- FontAwesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
+
+  <script>
+    // Toggle Password Visibility
+    document.getElementById('toggleRegPassword').addEventListener('click', function() {
+      const passwordInput = document.getElementById('registerPassword');
+      const icon = this.querySelector('i');
+      
+      if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        icon.classList.remove('fa-eye');
+        icon.classList.add('fa-eye-slash');
+      } else {
+        passwordInput.type = 'password';
+        icon.classList.remove('fa-eye-slash');
+        icon.classList.add('fa-eye');
+      }
+    });
+
+    // Register Form Submission
+    document.getElementById('registerForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const firstName = document.getElementById('firstName').value;
+      const lastName = document.getElementById('lastName').value;
+      const email = document.getElementById('registerEmail').value;
+      const phone = document.getElementById('phone').value;
+      const role = document.getElementById('userRole').value;
+      const password = document.getElementById('registerPassword').value;
+      const confirmPassword = document.getElementById('confirmPassword').value;
+      const agreeTerms = document.getElementById('agreeTerms').checked;
+      
+      // Validation
+      if (!firstName || !lastName || !email || !phone || !role || !password || !confirmPassword) {
+        alert('Please fill in all fields');
+        return;
+      }
+      
+      if (password.length < 8) {
+        alert('Password must be at least 8 characters long');
+        return;
+      }
+      
+      if (password !== confirmPassword) {
+        alert('Passwords do not match');
+        return;
+      }
+      
+      if (!agreeTerms) {
+        alert('Please accept the Terms & Conditions');
+        return;
+      }
+      
+      // In production, send to backend
+      alert('Account created successfully! Please check your email to verify your account.');
+      // window.location.href = 'login.html';
+    });
+  </script>
+
+</body>
+</html>

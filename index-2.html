@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SocietyHub - Society Management Platform | Housing Society</title>
+
+  <!-- Google Font & Bootstrap -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="light-mode">
+
+  <!-- PAGE LOADER -->
+  <div class="page-loader d-flex align-items-center justify-content-center">
+    <div class="loader-circle"></div>
+  </div>
+
+  <!-- ============= NAVBAR ============= -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logos/compasshousingsociety.png" alt="&nbsp;" class="logo"/>&nbsp;<span>Compass Housing Society</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index-2.html">Home2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="properties.html">Properties</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="agents.html">Agents</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <button class="mode-toggle" id="modeToggle" title="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="rtl-toggle" id="rtlToggle" title="Toggle RTL">
+                    <i class="fas fa-globe"></i>
+                </button>
+                <a href="login.html" class="btn btn-primary ms-2">Login</a>
+            </div>
+        </div>
+    </nav>
+
+  <main class="main-content">
+
+    <!-- Hero Section - SaaS Style -->
+    <section class="hero-saas py-5 py-lg-6 bg-light-subtle">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 mb-3">
+              <i class="fas fa-star me-2"></i>All-in-One Society Management
+            </div>
+            <h1 class="display-4 fw-bold mb-4">
+              Simplify Your <span class="text-primary">Housing Society</span> Management
+            </h1>
+            <p class="lead text-muted mb-4">
+              Transform your housing community with our smart digital platform. Manage maintenance, visitors, payments, and communications—all in one place.
+            </p>
+            <div class="d-flex flex-wrap gap-3 mb-4">
+              <a href="register.html" class="btn btn-primary btn-lg">
+                <i class="fas fa-rocket me-2"></i>Start Free Trial
+              </a>
+              <a href="#features" class="btn btn-outline-primary btn-lg">
+                <i class="fas fa-play-circle me-2"></i>Watch Demo
+              </a>
+            </div>
+            <div class="d-flex align-items-center gap-4 text-muted small">
+              <div class="d-flex align-items-center gap-2">
+                <i class="fas fa-check-circle text-success"></i>
+                <span>No credit card required</span>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <i class="fas fa-check-circle text-success"></i>
+                <span>14-day free trial</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-image-wrapper position-relative">
+              <img src="images/home/saas-hero.jpg" class="img-fluid rounded shadow-lg" alt="SocietyHub Dashboard" />
+              <div class="floating-card floating-card-1">
+                <div class="d-flex align-items-center gap-2">
+                  <i class="fas fa-check-circle text-success fa-lg"></i>
+                  <div>
+                    <div class="fw-semibold small">Payment Received</div>
+                    <div class="text-muted" style="font-size: 0.75rem;">Maintenance - Flat 402</div>
+                  </div>
+                </div>
+              </div>
+              <div class="floating-card floating-card-2">
+                <div class="d-flex align-items-center gap-2">
+                  <i class="fas fa-user-friends text-primary fa-lg"></i>
+                  <div>
+                    <div class="fw-semibold small">120+ Families</div>
+                    <div class="text-muted" style="font-size: 0.75rem;">Active Members</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="py-4 border-bottom bg-white">
+      <div class="container">
+        <div class="text-center mb-4">
+          <p class="text-muted small mb-0">Trusted by 250+ housing societies across the country</p>
+        </div>
+        <div class="row g-4 align-items-center justify-content-center">
+          <div class="col-6 col-md-2 text-center">
+            <div class="client-logo p-3 rounded">Skyline Residency</div>
+          </div>
+          <div class="col-6 col-md-2 text-center">
+            <div class="client-logo p-3 rounded">Palm Heights</div>
+          </div>
+          <div class="col-6 col-md-2 text-center">
+            <div class="client-logo p-3 rounded">Green Valley</div>
+          </div>
+          <div class="col-6 col-md-2 text-center">
+            <div class="client-logo p-3 rounded">Ocean View</div>
+          </div>
+          <div class="col-6 col-md-2 text-center">
+            <div class="client-logo p-3 rounded">Royal Gardens</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5 py-lg-6 bg-white">
+      <div class="container">
+        <div class="text-center mb-5">
+          <div class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 mb-3">Features</div>
+          <h2 class="h2 mb-3">Everything You Need to Run Your Society</h2>
+          <p class="text-muted">Powerful features designed for modern housing communities</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="feature-box-saas text-center p-4 h-100">
+              <div class="feature-icon-saas bg-primary bg-opacity-10 rounded-circle mx-auto mb-3">
+                <i class="fas fa-wallet fa-2x text-primary"></i>
+              </div>
+              <h5 class="mb-3">Online Maintenance Payments</h5>
+              <p class="text-muted small mb-0">Accept payments online via UPI, cards, and net banking. Auto-generate receipts and track pending dues effortlessly.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="feature-box-saas text-center p-4 h-100">
+              <div class="feature-icon-saas bg-primary bg-opacity-10 rounded-circle mx-auto mb-3">
+                <i class="fas fa-user-check fa-2x text-primary"></i>
+              </div>
+              <h5 class="mb-3">Visitor Management</h5>
+              <p class="text-muted small mb-0">Digital visitor entry logs, pre-approval system, and real-time notifications for enhanced security.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="feature-box-saas text-center p-4 h-100">
+              <div class="feature-icon-saas bg-primary bg-opacity-10 rounded-circle mx-auto mb-3">
+                <i class="fas fa-bullhorn fa-2x text-primary"></i>
+              </div>
+              <h5 class="mb-3">Community Announcements</h5>
+              <p class="text-muted small mb-0">Broadcast important updates, event notifications, and emergency alerts to all residents instantly.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="feature-box-saas text-center p-4 h-100">
+              <div class="feature-icon-saas bg-primary bg-opacity-10 rounded-circle mx-auto mb-3">
+                <i class="fas fa-tools fa-2x text-primary"></i>
+              </div>
+              <h5 class="mb-3">Complaint Management</h5>
+              <p class="text-muted small mb-0">Track and resolve maintenance complaints with photo uploads, status updates, and feedback system.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="feature-box-saas text-center p-4 h-100">
+              <div class="feature-icon-saas bg-primary bg-opacity-10 rounded-circle mx-auto mb-3">
+                <i class="fas fa-calendar-alt fa-2x text-primary"></i>
+              </div>
+              <h5 class="mb-3">Facility Booking</h5>
+              <p class="text-muted small mb-0">Book community hall, gym, swimming pool, and other amenities with automated scheduling and payments.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="feature-box-saas text-center p-4 h-100">
+              <div class="feature-icon-saas bg-primary bg-opacity-10 rounded-circle mx-auto mb-3">
+                <i class="fas fa-file-invoice fa-2x text-primary"></i>
+              </div>
+              <h5 class="mb-3">Accounting & Reports</h5>
+              <p class="text-muted small mb-0">Complete financial transparency with expense tracking, budgeting, and downloadable reports.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-5 py-lg-6 bg-light-subtle">
+      <div class="container">
+        <div class="text-center mb-5">
+          <div class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 mb-3">Process</div>
+          <h2 class="h2 mb-3">Get Started in 3 Simple Steps</h2>
+          <p class="text-muted">Set up your society management in minutes, not days</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="text-center position-relative">
+              <div class="step-number mx-auto mb-4">1</div>
+              <h5 class="mb-3">Sign Up & Setup</h5>
+              <p class="text-muted small mb-0">Create your account, add society details, and invite members. Takes less than 5 minutes.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="text-center position-relative">
+              <div class="step-number mx-auto mb-4">2</div>
+              <h5 class="mb-3">Customize & Configure</h5>
+              <p class="text-muted small mb-0">Set maintenance amounts, add facilities, configure payment methods, and define user roles.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="text-center position-relative">
+              <div class="step-number mx-auto mb-4">3</div>
+              <h5 class="mb-3">Start Managing</h5>
+              <p class="text-muted small mb-0">Go live and start accepting payments, tracking visitors, and engaging with your community.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Preview -->
+    <section class="py-5 py-lg-6 bg-white">
+      <div class="container">
+        <div class="text-center mb-5">
+          <div class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 mb-3">Pricing</div>
+          <h2 class="h2 mb-3">Simple, Transparent Pricing</h2>
+          <p class="text-muted">Choose a plan that fits your society size</p>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-lg-4">
+            <div class="card border-0 shadow-sm h-100 text-center pricing-card-saas">
+              <div class="card-body p-4">
+                <h5 class="mb-2">Basic Society</h5>
+                <p class="text-muted small mb-4">For small communities</p>
+                <div class="mb-4">
+                  <h2 class="display-4 fw-bold mb-0">₹999<span class="h5 text-muted fw-normal">/mo</span></h2>
+                </div>
+                <ul class="list-unstyled text-start mb-4">
+                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Up to 50 flats</li>
+                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Online payments</li>
+                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Visitor management</li>
+                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Announcements</li>
+                  <li class="mb-2 text-muted"><i class="fas fa-times me-2"></i>Advanced reports</li>
+                </ul>
+                <a href="pricing.html" class="btn btn-outline-primary w-100">Choose Plan</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card border-primary shadow h-100 text-center pricing-card-saas position-relative">
+              <span class="badge bg-primary position-absolute top-0 start-50 translate-middle">Popular</span>
+              <div class="card-body p-4">
+                <h5 class="mb-2">Premium Society</h5>
+                <p class="text-muted small mb-4">For medium communities</p>
+                <div class="mb-4">
+                  <h2 class="display-4 fw-bold text-primary mb-0">₹1,999<span class="h5 text-muted fw-normal">/mo</span></h2>
+                </div>
+                <ul class="list-unstyled text-start mb-4">
+                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Up to 150 flats</li>
+                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>All Basic features</li>
+                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Facility booking</li>
+                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Complaint tracking</li>
+                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Advanced reports</li>
+                </ul>
+                <a href="pricing.html" class="btn btn-primary w-100">Choose Plan</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card border-0 shadow-sm h-100 text-center pricing-card-saas">
+              <div class="card-body p-4">
+                <h5 class="mb-2">Enterprise Community</h5>
+                <p class="text-muted small mb-4">For large townships</p>
+                <div class="mb-4">
+                  <h2 class="display-4 fw-bold mb-0">Custom</h2>
+                </div>
+                <ul class="list-unstyled text-start mb-4">
+                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Unlimited flats</li>
+                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>All Premium features</li>
+                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Dedicated support</li>
+                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Custom integrations</li>
+                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>White-label option</li>
+                </ul>
+                <a href="contact.html" class="btn btn-outline-primary w-100">Contact Sales</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5 py-lg-6 bg-light-subtle">
+      <div class="container">
+        <div class="text-center mb-5">
+          <div class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 mb-3">Testimonials</div>
+          <h2 class="h2 mb-3">What Society Admins Say</h2>
+          <p class="text-muted">Real feedback from communities using SocietyHub</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body p-4">
+                <div class="mb-3">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                </div>
+                <p class="text-muted mb-3">"SocietyHub transformed our maintenance collection. We now receive 95% payments on time. The automated reminders work like magic!"</p>
+                <div class="d-flex align-items-center gap-3">
+                  <img src="images/home/admin.jpg" class="rounded-circle" width="50" height="50" alt="Admin" />
+                  <div>
+                    <h6 class="mb-0 fw-semibold">Rajesh Kumar</h6>
+                    <small class="text-muted">Secretary, Skyline Residency</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body p-4">
+                <div class="mb-3">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                </div>
+                <p class="text-muted mb-3">"Managing 180 flats was a nightmare before SocietyHub. Now everything is organized, transparent, and accessible to all residents 24/7."</p>
+                <div class="d-flex align-items-center gap-3">
+                  <img src="images/home/admin.jpg" class="rounded-circle" width="50" height="50" alt="Admin" />
+                  <div>
+                    <h6 class="mb-0 fw-semibold">Priya Sharma</h6>
+                    <small class="text-muted">Chairperson, Green Valley</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body p-4">
+                <div class="mb-3">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                </div>
+                <p class="text-muted mb-3">"The visitor management feature has enhanced our security dramatically. We can track every entry and exit with just a few clicks."</p>
+                <div class="d-flex align-items-center gap-3">
+                  <img src="images/home/admin.jpg" class="rounded-circle" width="50" height="50" alt="Admin" />
+                  <div>
+                    <h6 class="mb-0 fw-semibold">Amit Patel</h6>
+                    <small class="text-muted">Treasurer, Ocean View</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 py-lg-6 bg-primary text-white">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8">
+            <h2 class="h2 mb-3">Ready to Transform Your Society?</h2>
+            <p class="mb-0 opacity-75">Join 250+ societies already using SocietyHub. Start your 14-day free trial today—no credit card required.</p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a href="register.html" class="btn btn-light btn-lg">
+              <i class="fas fa-rocket me-2"></i>Get Started Free
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============= FOOTER ============= -->
+    <footer>
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-md-6 col-lg-3 footer-col">
+                    <h5>About</h5>
+                    <img src="images/logos/compasshousingsocietynobg.png" alt="Compass Housing Society" class="footer-logo"/>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.8;">Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. Imperdiet tempus felis vitae sit est quisque.</p>
+                </div>
+                <div class="col-md-6 col-lg-3 footer-col">
+                    <h5>Service</h5>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="property-details.html">Features</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="agents.html">Agents</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3 footer-col">
+                    <h5>Our Location</h5>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.8;">1234 Kingsthrone Rd.
+                        Santa villa, santras 85486</p>
+                </div>
+                <div class="col-md-6 col-lg-3 footer-col">
+                    <h5>Newsletter</h5>
+                    <form>
+                    <div class="footer-newsletter">
+                        <input type="email" placeholder="Your email" required>
+                        <button>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    </form>
+                    <div class="social-icons">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; 2025 Compass Housing Society. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <a href="#" style="color: var(--text-secondary); text-decoration: none; margin: 0 1rem;">Terms &
+                            Conditions</a>
+                        <a href="#" style="color: var(--text-secondary); text-decoration: none; margin: 0 1rem;">Privacy
+                            Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- FontAwesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
