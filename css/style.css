@@ -214,8 +214,8 @@
 
         /* ============= HERO SECTION ============= */
         .hero1 {
-            /* background: linear-gradient(135deg, var(--bg-secondary) 0%, rgba(62, 84, 235, 0.05) 100%); */
-            background-image: url('../images/home/home.webp');
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, rgba(62, 84, 235, 0.05) 100%);
+            /* background-image: url('../images/home/home.webp'); */
             background-repeat: no-repeat;
             background-position: center center;
             background-size: contain;
@@ -223,6 +223,7 @@
             margin-top: 70px;
             position: relative;
             overflow: hidden;
+            align-content: center;
         }
 
         .hero::before {
