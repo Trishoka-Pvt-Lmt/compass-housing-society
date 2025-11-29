@@ -976,6 +976,9 @@
   background: var(--card-bg, #0b1120);
   color: var(--text-color, #e5e7eb);
 }
+.dark-mode .main-content h1 {
+  color: var(--bg-primary);
+}
 
 .dark-mode .property-card .card-title,
 .dark-mode .property-card .fw-semibold {
@@ -1241,7 +1244,7 @@
 }
 
 .dark-mode .feature-card:hover {
-  background: rgba(62, 84, 235, 0.15);
+  /* background: rgba(62, 84, 235, 0.15); */
 }
 
 .dark-mode .team-img {
