@@ -1723,3 +1723,7 @@ html {
   margin-top: 70px;
 }
 */
+input::placeholder {
+  color: red;
+  opacity: 0.5;
+}
